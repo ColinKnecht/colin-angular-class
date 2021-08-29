@@ -1,3 +1,4 @@
+import { RecipeService } from './recipes/recipe.service';
 import { AppRoutingModule } from './app-routing-module';
 import { DropdownDirective } from './shared/dropdown-directive';
 import { NgModule } from '@angular/core';
@@ -37,7 +38,7 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [ShoppingListService],
+  providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
