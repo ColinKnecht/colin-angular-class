@@ -29,6 +29,8 @@ export class RecipeService {
   constructor(private slService: ShoppingListService) {}
 
   getRecipe(index: number) {
+    console.log(index);
+    console.log(this.recipes);
     return this.recipes[index];
   }
 
